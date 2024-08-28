@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <main class="caixaMain">
+        <input class="cidade" type="text" placeholder="Digite o nome da cidade">
+        <button class="btnBuscar" onclick="btnBusca()">
+            <img class="imgBuscar" src="./src/img/find.svg" alt="iconButtom de lupa">
+        </button>
+
+        <div class="caixaMedia">
+            <h2 class="cidadeName">Tempo em: </h2>
+
+            <p class="temperatura"></p>
+
+            <div class="caixaMenor">
+                <img class="imgPrevisao" src="./src/img/nuvem.png" alt="icone-do-infotempo">
+                <p class="clima"></p>
+            </div>
+            <p class="umidade">Umidade:</p>
+        </div>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
